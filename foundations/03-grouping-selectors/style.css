@@ -1,0 +1,14 @@
+.simpleBlack, .defiantYellow {
+    font-size: 28px;
+    font-family: "Helvetica", "Times New Roman", sans-serif;
+}
+
+.simpleBlack {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.defiantYellow{
+    background-color: #ffff00;
+    color: #000000;
+}
