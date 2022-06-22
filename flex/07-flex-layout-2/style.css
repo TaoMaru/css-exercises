@@ -4,25 +4,88 @@ body {
   min-height: 100vh;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  margin-bottom: auto;
+  font-weight: bold;
+  font-size: 32px;
+  padding-left: 20px;
+  padding-top: 30px;
 }
 
 .footer {
+  box-sizing: border-box;
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  margin-top: auto;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
+  margin-right: auto;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  flex: 1 1 auto;
+  height: 200px;
+  width: 200px;
+}
+
+.pageBody,
+.middleContent,
+.cardContent,
+.linksList {
+  display: flex;
+}
+
+.pageBody {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header,
+.footer {
+  flex: 1 1 auto;
+}
+
+.middleContent {
+  flex: 2 1 auto;
+}
+
+.cardContent {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
+  row-gap: 30px;
+  height: auto;
+  width: auto;
+  padding: 20px;
+}
+
+.linksList {
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.linksList li {
+  flex: 1 1 auto;
 }
