@@ -30,6 +30,7 @@ input {
 .footer,
 .content,
 .buttons,
+.pageBody,
 ul {
   display: flex;
 }
@@ -98,4 +99,22 @@ a {
   width: 500px;
   margin: auto;
   flex: 15 1 auto;
+}
+
+.header {
+  flex: 1 0 auto;
+}
+
+.content {
+  flex: 2 0 auto;
+}
+
+.footer {
+  flex: 1 0 auto;
+}
+
+.pageBody {
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 250px;
 }
